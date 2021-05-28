@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="utf8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!--integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <ul>
+        <li>
+          <div class="numbers-display" id="calcDisplay">
+            <!--計算結果を出力する場所-->
+            <div id = "dispRslt" class="output">0</div>
+            <!--計算過程を出力する -->
+            <div id = "dispPrc" class="output active">0</div>
+          </div>
+        </li>
+        <li>
+          <button class="narrow-button smplNum" data-index-id = 7 >7</button>
+          <button class="narrow-button smplNum" data-index-id = 8 >8</button>
+          <button class="narrow-button smplNum" data-index-id = 9 >9</button>
+          <button class="narrow-button toolBtn action" data-index-id = '/' >÷</button>
+        </li>
+        <li>
+          <button class="narrow-button smplNum" data-index-id = 4 >4</button>
+          <button class="narrow-button smplNum" data-index-id = 5 >5</button>
+          <button class="narrow-button smplNum" data-index-id = 6 >6</button>
+          <button class="narrow-button toolBtn action" data-index-id = '*' >x</button>
+        </li>
+        <li>
+          <button class="narrow-button smplNum" data-index-id = 1 >1</button>
+          <button class="narrow-button smplNum" data-index-id = 2 >2</button>
+          <button class="narrow-button smplNum" data-index-id = 3 >3</button>
+          <button class="narrow-button toolBtn action" data-index-id = '-' >-</button>
+        </li>
+        <li>
+          <button class="narrow-button" id="snglZero" data-index-id = 0 >0</button>
+          <button class="narrow-button" id="doblZero" data-index-id = 00 >00</button>
+          <button class="narrow-button" id="pnt" data-index-id = . >.</button>
+          <button class="narrow-button toolBtn action" data-index-id = '+' >+</button>
+        </li>
+        <li>
+          <button class="wide-button toolBtn" id="clear">AC</button>
+          <button class="wide-button toolBtn" id="eqlBtn">=</button>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="Calculator.js"></script>
+  </body>
+</html>
